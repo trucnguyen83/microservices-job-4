@@ -3,7 +3,8 @@ const uri = 'https://jsonplaceholder.typicode.com/users';
 function getItems() {
     fetch(uri)   
         .then(response => response.json())
-        .then(data => _displayItems(data))   
+        .then(data => _displayItems(data))
+}  
 
 function _displayItems(data) {
     const tbody = document.getElementById('userInfo');
